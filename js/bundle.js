@@ -13,7 +13,7 @@ if (header) {
   toggleScrolledClass();
 }
 
-document.querySelectorAll('.main-menu > li.menu-item-has-children').forEach(item => {
+document.querySelectorAll('.main-menu > .menu-item-has-children').forEach(item => {
   item.addEventListener('mouseenter', () => {
     document.querySelector('.main-menu').classList.add('has-hovered-item');
   });
@@ -22,6 +22,8 @@ document.querySelectorAll('.main-menu > li.menu-item-has-children').forEach(item
     document.querySelector('.main-menu').classList.remove('has-hovered-item');
   });
 });
+
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
